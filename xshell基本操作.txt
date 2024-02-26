@@ -1,0 +1,48 @@
+基本操作：
+
+ls：显示当前目录下的文件
+cd ..：进入上层目录
+
+进入Xshell 6先连接
+第一步先进计算节点：ssh+计算节点名称（ssh cu07）
+进入自己的文件夹：cd+文件夹名称（cd lcr）
+进入自己的项目工程文件夹：cd 需要运行的工程
+激活虚拟环境：conda activate+自己的虚拟环境（conda activate xzj_py3）
+执行py文件：python3 .py文件（python3 xxx.py）
+终止程序执行：ctrl+z
+
+查看当前已有的虚拟环境：
+cd home/
+cd 428
+cd anaconda3/
+cd envs/
+ls：即可查看当前已有的虚拟环境
+
+创建虚拟环境：
+一定要进主节点（卸载也进主节点）：ssh+主节点名称（ssh mu01）
+conda create -n xzj_py2 python=2.7
+Proceed([y]/n)? y
+[428@mu01~]$ conda activate xzj_py2
+
+在xshell中查看txt文件：
+cat xxx.txt
+在xshell中删除文件（夹）：
+rm xxx / rm -r xxx 强制删除
+在xshell中新建文件夹：
+mkdir xxx
+在xshell中删除文件夹：
+rmdir xxx
+将文件从服务器中下载到本地
+sz xxx
+
+虚拟环境-conda指令-用法：
+创建虚拟环境 ：
+conda create -n scrapy_venv python=3.7
+激活进入虚拟环境：
+conda activate scrapy_venv
+退出虚拟环境：
+conda deactivate
+查看所有虚拟环境:
+conda env list
+卸载环境:
+conda remove -n scrapy_venv --all
