@@ -140,4 +140,12 @@
 
 # github
 
-> 
+> `git init` 初始化本地文件夹
+>
+> `git remote add origin 仓库https/ssh` 将本地文件夹与远程仓库链接
+>
+> `git push origin branch_name` 推送到远程分支
+>
+> `git branch -m branch_name` 更改当前分支名字
+>
+> `git branch --set-upstream-to=origin/origin_branch local_branch` 将本地分支跟踪远程分支
